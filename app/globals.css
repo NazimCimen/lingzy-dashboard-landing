@@ -128,11 +128,105 @@
 }
 
 @layer utilities {
+  .floating-slow {
+    animation: float-y 6.5s ease-in-out infinite;
+  }
+
+  .floating-medium {
+    animation: float-y 5.2s ease-in-out infinite;
+  }
+
+  .floating-fast {
+    animation: float-y 4.3s ease-in-out infinite;
+  }
+
+  .hero-phone-wrap {
+    perspective: 1200px;
+  }
+
+  .hero-phone-frame {
+    background: linear-gradient(150deg, oklch(0.2 0.02 250), oklch(0.12 0.02 250));
+    transform: rotateY(-7deg) rotateX(5deg);
+    animation: phone-orbit 7s ease-in-out infinite;
+  }
+
+  .hero-phone-glow {
+    position: absolute;
+    inset: 8% -10%;
+    background: radial-gradient(circle at center, color-mix(in oklch, var(--color-primary) 45%, transparent) 0%, transparent 70%);
+    filter: blur(24px);
+    animation: pulse-glow 5s ease-in-out infinite;
+  }
+
+  .hero-screen-pan {
+    animation: screen-pan 12s ease-in-out infinite;
+  }
+
+  .screenshot-card {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+  }
+
+  .animate-in-up {
+    opacity: 0;
+    animation: in-up 0.7s ease-out forwards;
+  }
+
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes phone-orbit {
+  0%,
+  100% {
+    transform: rotateY(-7deg) rotateX(5deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(-3deg) rotateX(2deg) translateY(-8px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes screen-pan {
+  0%,
+  100% {
+    object-position: center top;
+  }
+  50% {
+    object-position: center 16%;
+  }
+}
+
+@keyframes in-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

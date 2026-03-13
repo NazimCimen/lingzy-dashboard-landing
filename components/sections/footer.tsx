@@ -15,19 +15,23 @@ export function Footer() {
           {/* Links */}
           <nav className="flex items-center gap-6">
             <a 
-              href="#" 
+              href="https://www.nazimcimen.com/privacy_policy_lingzy.html"
+              target="_blank"
+              rel="noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy Policy
             </a>
             <a 
-              href="#" 
+              href="https://www.nazimcimen.com/terms_conditions_lingzy.html"
+              target="_blank"
+              rel="noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms of Service
             </a>
             <a 
-              href="#" 
+              href="mailto:hello@lingzy.app"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact

@@ -84,12 +84,13 @@ export function ScreenshotsSection() {
           {screenshots.map((screenshot, index) => (
             <div 
               key={index} 
-              className="flex-shrink-0 snap-center flex flex-col items-center"
+              className="flex-shrink-0 snap-center flex flex-col items-center animate-in-up"
+              style={{ animationDelay: `${index * 90}ms` }}
             >
               <IPhoneMockup 
                 src={screenshot.src} 
                 alt={screenshot.alt}
-                className="hover:scale-105 transition-transform duration-300"
+                className="screenshot-card hover:scale-105 transition-transform duration-500"
               />
               <span className="mt-4 text-sm font-medium text-muted-foreground">
                 {screenshot.label}
