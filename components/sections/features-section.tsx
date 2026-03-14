@@ -65,10 +65,10 @@ export function FeaturesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
-            Everything you need to master English
+            Designed for natural learning
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to experience literature in English
+            Experience classic literature adapted for your success
           </p>
         </motion.div>
 
