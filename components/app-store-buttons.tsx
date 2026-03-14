@@ -5,7 +5,6 @@ interface AppStoreButtonsProps {
   className?: string
 }
 
-
 export function AppStoreButtons({ className = "" }: AppStoreButtonsProps) {
   return (
     <div className={`flex flex-col sm:flex-row flex-wrap gap-4 ${className}`}>
