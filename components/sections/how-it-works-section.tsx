@@ -7,20 +7,20 @@ const steps = [
   {
     icon: <BookMarked className="w-8 h-8" />,
     number: "01",
-    title: "Choose a book or article",
-    description: "Browse our collection of classic books and curated articles at your level."
+    title: "Pick a World Classic",
+    description: "Dive into legendary literature. Hard to read? Instantly adapt the text to your exact English level."
   },
   {
     icon: <MousePointerClick className="w-8 h-8" />,
     number: "02",
-    title: "Tap words to learn meanings",
-    description: "Instantly see definitions, translations, and examples for any word."
+    title: "Tap to Understand & Hear",
+    description: "Stuck on a word? Just tap it to instantly view its meaning, translation, and native pronunciation."
   },
   {
     icon: <TrendingUp className="w-8 h-8" />,
     number: "03",
-    title: "Improve naturally",
-    description: "Build vocabulary through context, not memorization."
+    title: "Master English Naturally",
+    description: "Absorb vocabulary and grammar effortlessly through the power of context and great storytelling."
   }
 ]
 

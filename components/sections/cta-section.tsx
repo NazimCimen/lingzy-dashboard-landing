@@ -49,7 +49,7 @@ export function CTASection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance"
           >
-            Start improving your English today
+            Ready to read your first world classic?
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export function CTASection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            Join thousands of learners who are mastering English through the joy of reading.
+            Experience the original beauty of literature, perfectly adapted for your journey. Download Lingzy and start reading today.
           </motion.p>
           
           <motion.div 

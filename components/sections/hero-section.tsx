@@ -69,13 +69,13 @@ export function HeroSection() {
                 variants={itemVariants}
                 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] tracking-tight text-balance mb-6 bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
               >
-                Learn English by Reading Real Stories
+                Read World Classics, Master English Naturally
               </motion.h1>
               <motion.p 
                 variants={itemVariants}
                 className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0 text-pretty"
               >
-                Read world classics in their original text and adapt them to your exact language level. Master English naturally through timeless stories.
+                Dive into timeless literature with smart adaptation. Scale any text to your exact level, tap for instant meanings, and learn through stories you actually love.
               </motion.p>
               <motion.div variants={itemVariants}>
                 <AppStoreButtons className="justify-center lg:justify-start" />

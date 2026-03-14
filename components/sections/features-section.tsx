@@ -1,39 +1,34 @@
 "use client"
 
 import { FeatureCard } from "@/components/feature-card"
-import { BookOpen, Newspaper, Sparkles, Puzzle, Search, FileText } from "lucide-react"
+import { BookOpen, Layers, Sparkles, Puzzle, Search } from "lucide-react"
 import { motion } from "framer-motion"
 
 const features = [
   {
     icon: <BookOpen className="w-6 h-6" />,
-    title: "Classic Books",
-    description: "Read famous classics like Dracula, Sherlock Holmes and more while improving your English."
+    title: "Free World Classics",
+    description: "Access an extensive library of timeless world classics and read them in their beautiful, original text for free."
   },
   {
-    icon: <Newspaper className="w-6 h-6" />,
-    title: "Quick Reads",
-    description: "Short articles designed for fast learning and daily reading practice."
+    icon: <Layers className="w-6 h-6" />,
+    title: "Instant Level Adaptation",
+    description: "Original text too difficult? Magically adapt any paragraph to perfectly match your current English level."
+  },
+  {
+    icon: <Search className="w-6 h-6" />,
+    title: "Smart Tap Dictionary",
+    description: "Tap any unknown word to instantly see its meaning, translation, and hear its native pronunciation."
   },
   {
     icon: <Sparkles className="w-6 h-6" />,
     title: "AI Story Generator",
-    description: "Generate personalized stories with AI and learn vocabulary in context."
+    description: "Create your own personalized, engaging stories using AI to learn new vocabulary in context."
   },
   {
     icon: <Puzzle className="w-6 h-6" />,
     title: "Word Workshop",
-    description: "Interactive vocabulary practice system to reinforce learning."
-  },
-  {
-    icon: <Search className="w-6 h-6" />,
-    title: "Built-in Dictionary",
-    description: "Tap any word to instantly see its meaning without leaving the page."
-  },
-  {
-    icon: <FileText className="w-6 h-6" />,
-    title: "Word Meaning Sheets",
-    description: "Automatically generated sheets help you remember new vocabulary."
+    description: "Solidify your learning with an interactive vocabulary practice system tailored to your reading history."
   }
 ]
 
@@ -62,7 +57,7 @@ export function FeaturesSection() {
   return (
     <section className="py-20 md:py-32 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -73,11 +68,11 @@ export function FeaturesSection() {
             Everything you need to master English
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Powerful features designed to make learning natural and engaging
+            Everything you need to experience literature in English
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -86,7 +81,7 @@ export function FeaturesSection() {
         >
           {features.map((feature, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <FeatureCard 
+              <FeatureCard
                 icon={feature.icon}
                 title={feature.title}
                 description={feature.description}

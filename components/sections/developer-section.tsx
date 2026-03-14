@@ -28,7 +28,7 @@ export function DeveloperSection() {
               
               <div className="text-center md:text-left">
                 <h3 className="text-2xl font-bold text-foreground">Nazım Çimen</h3>
-                <p className="text-muted-foreground font-medium mb-4">Creator of Lingzy</p>
+                <p className="text-muted-foreground font-medium mb-4">Developer of Lingzy</p>
                 <a 
                   href="https://www.linkedin.com/in/nazim-cimen" 
                   target="_blank" 
@@ -53,7 +53,7 @@ export function DeveloperSection() {
                   As a language learner myself, I always faced a frustrating dilemma: reading simplified English books felt uninspiring, but tackling world classics in their original form was overwhelmingly difficult.
                 </p>
                 <p>
-                  I realized there had to be a better way to experience the authentic beauty of literature without constantly reaching for a dictionary. That's why I created Lingzy.
+                  I realized there had to be a better way to experience the authentic beauty of literature without constantly reaching for a dictionary. That's why I developed Lingzy.
                 </p>
                 <p>
                   My goal was to build a tool that bridges the gap—allowing learners to read timeless stories in their original text while dynamically adapting the language to their exact level. I hope Lingzy makes your English learning journey as enjoyable and natural as reading your favorite book.
