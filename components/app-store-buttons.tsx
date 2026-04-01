@@ -8,8 +8,10 @@ interface AppStoreButtonsProps {
 export function AppStoreButtons({ className = "" }: AppStoreButtonsProps) {
   return (
     <div className={`flex flex-col sm:flex-row flex-wrap gap-4 ${className}`}>
-      <Link
-        href="/app-store"
+      <a
+        href="https://apps.apple.com/us/app/lingzy/id6760796761"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-3 bg-foreground text-background px-6 py-3.5 rounded-xl hover:bg-foreground/90 transition-colors group"
       >
         <Apple className="w-7 h-7" />
@@ -17,7 +19,7 @@ export function AppStoreButtons({ className = "" }: AppStoreButtonsProps) {
           <div className="text-[10px] opacity-80 leading-none">Download on the</div>
           <div className="text-lg font-semibold leading-tight">App Store</div>
         </div>
-      </Link>
+      </a>
       <a
         href="https://play.google.com/store/apps/details?id=com.lingzy.app"
         target="_blank"
