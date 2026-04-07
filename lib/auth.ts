@@ -7,8 +7,6 @@ import { AUTH, MESSAGES, APP_ROUTES } from "./constants"
 const secretKey = process.env.JWT_SECRET || `secure_fallback_${Math.random()}`
 const key = new TextEncoder().encode(secretKey)
 
-// GitHub Public Repo güvenliği: Asla gerçek şifrenizi yedeğe (fallback) yazmayın!
-// Eğer ortam değişkenleri girilmezse ulaşılamaz, rastgele bir karakter zinciri (kilit) ata.
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || `admin_${Math.random()}`
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || `lock_${Math.random()}`
 
